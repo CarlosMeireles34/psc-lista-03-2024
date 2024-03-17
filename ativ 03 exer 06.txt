@@ -1,0 +1,15 @@
+programa {
+  inteiro numero, resto
+  funcao inicio() {
+    
+    escreva("Por favor escreva um numero inteiro:")
+    leia(numero)
+    resto <- numero % 5 
+    se  (resto == 1){
+      escreva(" Este numero nao é divisivel por 5")
+    }
+    senao
+      escreva(" este numero e divisivel por 5\n")
+
+  }
+}

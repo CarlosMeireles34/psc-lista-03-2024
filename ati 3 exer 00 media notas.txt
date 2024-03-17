@@ -1,0 +1,32 @@
+programa {
+  real nota1, nota2, medianotas, faltas
+  funcao inicio() {
+    escreva("informe a quantidade de faltas:")
+    leia(faltas)
+
+    se(faltas >= 10){
+      escreva("o aluno foi reprovado independente das notas:")
+    }
+    senao
+
+    escreva("\ninforme a primeira nota:")
+    leia(nota1)
+    escreva("\ninforme a segunda nota:")
+    leia(nota2)
+    medianotas= (nota1 + nota2) / 2
+
+    se (medianotas == 10) {
+      escreva("\naluno aprovado com excelencia, media:" + medianotas)
+    }
+    senao se (medianotas >= 7) {
+      escreva ("\n aluno aprovado , media:" + medianotas)
+    }
+    senao se (medianotas >= 5) {
+      escreva("\n aluno em recuperacao, media:" + medianotas)
+    }
+    senao {
+      escreva("aluno reprovado, media:", medianotas)
+    }
+
+  }
+}

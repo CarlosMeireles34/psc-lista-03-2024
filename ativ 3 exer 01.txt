@@ -1,0 +1,41 @@
+programa {
+  funcao inicio() {
+    inteiro n1, n2, n3, medianumero
+    escreva("por favor informe o primeiro numero:")
+    leia(n1)
+    escreva("por favor informe o segundo numero:")
+    leia(n2)
+    escreva("por favor informe o terceiro numero:")
+    leia(n3)
+    se (n1 > n2)
+    {
+      escreva(n1," e o maior\n")
+    }
+    senao
+        se (n2 > n3)
+    {
+          escreva(n2,"\n e o maior numero")
+    }
+    senao
+          escreva(n3,"\n e o maior numero")
+    se (n1 < n2)
+    {
+      escreva(n1, "\n e o menor numero")
+    }
+    senao
+        se (n2 < n3)
+    {
+      escreva(n2, "\n e o menor numero")
+    }
+    senao
+      escreva(n3, "\n e o menor numero")
+      medianumero= (n1 + n2 + n3) / 3
+    escreva ("\n a media dos numeros foi:", medianumero)
+    
+
+
+
+
+    
+  }
+}

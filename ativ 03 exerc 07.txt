@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, c
+
+    escreva("por favor informe os valores de A, B, C:")
+    leia(a, b, c)
+    
+    se(a + b > c e a + c > b e b + c > a){
+      escreva("formam um triangulo ")
+      se ( a == b e a ==c){
+        escreva("equilatero.\n")
+      }
+      senao {
+        se(a == c ou a == b ou b ==c){
+          escreva("isosceles.\n")
+        }
+        senao{
+          escreva("escaleno.")
+        }
+      }
+    }
+    
+  }
+}

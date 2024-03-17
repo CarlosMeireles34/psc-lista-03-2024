@@ -1,0 +1,14 @@
+programa {
+  inclua biblioteca Matematica
+  inteiro numero
+  funcao inicio() {
+    escreva("Por favor informe um numero inteiro:")
+    leia(numero)
+    se (numero % 2 == 0 ) {
+      escreva("Este numero ", numero , " e par")
+    }
+    senao
+      escreva(" Este numero ", numero, " e impar")
+    
+  }
+}
